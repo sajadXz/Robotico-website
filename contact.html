@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>تواصل معنا | فريق روبوتيكو — ROBOTICO TEAM</title>
+<meta name="description" content="فريق روبوتيكو — جامعة البصرة. نبني بِكسي: المعلّم الآليّ الذكيّ." />
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700;800&family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="circuit-bg" aria-hidden="true"></div>
+
+<div class="page-wipe" id="pageWipe" aria-hidden="true"><img src="assets/logo.jpg" alt="" /></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" data-nav aria-label="روبوتيكو — الرئيسية">
+      <img src="assets/logo.jpg" alt="شعار فريق روبوتيكو" />
+      <span class="brand-text">
+        <span class="brand-name">روبوتيكو</span>
+        <span class="brand-sub">ROBOTICO TEAM</span>
+      </span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" data-nav>الرئيسية</a>
+      <a href="about.html" data-nav>من نحن</a>
+      <a href="projects.html" data-nav>مشاريعنا</a>
+      <a href="team.html" data-nav>الفريق</a>
+      <a href="contact.html" data-nav class="active">تواصل معنا</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" aria-label="تبديل الثيم"></button>
+      <button class="icon-btn burger" id="burger" aria-label="القائمة" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<button class="side-tab" id="sideTab">المنصّة قريبًا</button>
+<aside class="sidebar" id="sidebar" aria-label="نافذة المنصّة">
+  <div class="sidebar-head">
+    <h3>منصّة بِكسي</h3>
+    <button class="icon-btn" id="sideClose" aria-label="إغلاق">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <p class="sidebar-sub">مساحة مخصّصة لأدوات بِكسي التفاعلية — سيتم تفعيلها قريبًا.</p>
+  <div class="side-card">
+    <h4><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="3"/><path d="M8 22h8M12 18v4"/></svg> محاكي بِكسي التفاعلي</h4>
+    <p>جرّب بِكسي مباشرة من المتصفح: تعابيره، حروفه، وتفاعله.</p>
+    <span class="soon">قريبًا</span>
+  </div>
+  <div class="side-card">
+    <h4><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg> تطبيق أولياء الأمور</h4>
+    <p>رابط تحميل التطبيق المرافق لمتابعة تقدّم طفلك.</p>
+    <span class="soon">قريبًا</span>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<main class="page-body">
+
+<section class="section" style="margin-top:76px">
+  <div class="wrap">
+    <span class="eyebrow reveal">تواصل معنا</span>
+    <h2 class="section-title reveal">نرحّب بالشراكات والاستفسارات</h2>
+    <p class="section-lead reveal d1">للمدارس، الجهات الأكاديمية، والمهتمّين بمشروع بِكسي — راسلونا مباشرة.</p>
+
+    <div class="grid-2" style="margin-top:50px;align-items:start">
+      <div class="reveal">
+        <div class="ci">
+          <div class="ci-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div>
+          <div><b>البريد الرسمي</b><span>team.robotico@example.com</span></div>
+        </div>
+        <div class="ci">
+          <div class="ci-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><b>المقر</b><span>جامعة البصرة — كلية علوم الحاسوب وتكنولوجيا المعلومات</span></div>
+        </div>
+        <div class="ci">
+          <div class="ci-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></svg></div>
+          <div><b>المشاركة</b><span>مسابقة NURAI 2026 — الذكاء الاصطناعي</span></div>
+        </div>
+      </div>
+
+      <form class="contact reveal d1" id="contactForm">
+        <div class="field"><label for="name">الاسم الكامل</label><input id="name" type="text" placeholder="اكتب اسمك" required /></div>
+        <div class="field"><label for="email">البريد الإلكتروني</label><input id="email" type="email" placeholder="example@email.com" required /></div>
+        <div class="field"><label for="msg">الرسالة</label><textarea id="msg" placeholder="اكتب رسالتك هنا" required></textarea></div>
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">إرسال الرسالة</button>
+        <p style="font-size:.85rem;color:var(--muted);margin-top:14px;text-align:center">سيُفتح تطبيق البريد لديك لإكمال الإرسال — بدون أي قاعدة بيانات.</p>
+      </form>
+    </div>
+  </div>
+</section>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var n=document.getElementById('name').value.trim();
+  var em=document.getElementById('email').value.trim();
+  var m=document.getElementById('msg').value.trim();
+  location.href='mailto:team.robotico@example.com?subject='+encodeURIComponent('رسالة من '+n+' — موقع روبوتيكو')+'&body='+encodeURIComponent(m+'\n\n---\nالاسم: '+n+'\nالبريد: '+em);
+});
+</script>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <img src="assets/logo.jpg" alt="" />
+        <span class="brand-text">
+          <span class="brand-name">روبوتيكو</span>
+          <span class="brand-sub">UNIVERSITY OF BASRAH</span>
+        </span>
+      </div>
+      <div class="foot-links">
+        <a href="index.html" data-nav>الرئيسية</a>
+      <a href="about.html" data-nav>من نحن</a>
+      <a href="projects.html" data-nav>مشاريعنا</a>
+      <a href="team.html" data-nav>الفريق</a>
+      <a href="contact.html" data-nav class="active">تواصل معنا</a>
+      </div>
+    </div>
+    <div class="foot-copy">© ٢٠٢٦ فريق روبوتيكو — جامعة البصرة · جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
